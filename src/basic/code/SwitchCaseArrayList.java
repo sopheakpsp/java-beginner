@@ -32,9 +32,10 @@ public class SwitchCaseArrayList {
 		}
 		else{
 			System.out.println(futureMonth.size());
-//			for(String monthName : futureMonth){
-//				System.out.println(monthName);
-//			}
+			
+			for(String monthName : futureMonth){
+				System.out.println(monthName);
+			}
 		}
 	}
 
