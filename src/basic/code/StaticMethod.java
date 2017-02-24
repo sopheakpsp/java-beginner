@@ -24,3 +24,11 @@ public class StaticMethod {
 		display();
 	}
 }
+
+
+/*
+ * notice:
+ * - static method can only call in the same static method or class
+ * - only static variable can call in static method
+ * - when use static variable no need to use keyword "this" example StaticMethod.num
+ * */
