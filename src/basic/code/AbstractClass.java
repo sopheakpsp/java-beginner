@@ -51,8 +51,7 @@ abstract class Shape{
 		System.out.println("Width = " + width + " Height = " + height + " style = " + name);
 	}
 	
-	abstract double area();
-	
+	abstract double area();	
 }
 
 class Triangle extends Shape{ //CLASS TRIANGLE
