@@ -48,13 +48,14 @@ abstract class Shape{
 	}
 	
 	void show(){
-		System.out.println("Width = " + width + " Height = " + height);
+		System.out.println("Width = " + width + " Height = " + height + " style = " + name);
 	}
 	
 	abstract double area();
+	
 }
 
-class Triangle extends Shape{
+class Triangle extends Shape{ //CLASS TRIANGLE
 	private String style;
 	Triangle(){
 		super();
@@ -62,7 +63,7 @@ class Triangle extends Shape{
 	}
 	
 	Triangle(double w, double h, String s){
-		super(w ,h , "Triangle");
+		super(w ,h , s); //value get from Triangle parameter and pass it to super class constructor parameter 
 		style = s;
 	}
 	
@@ -112,9 +113,14 @@ public class AbstractClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Shape shapeObj[] = new Shape[4];
-		shapeObj[0] = new Triangle("Right", 9.0, 11.0);
+		shapeObj[0] = new Triangle(9.0, 11.0, "Right");
 		shapeObj[1] = new Rectangle(11);
 		shapeObj[2] = new Rectangle(12,5);
+		shapeObj[3] = new Triangle(9.8);
+		
+		for(int i=0; i<4; i++){
+			shapeObj[i].show();
+		}
 	}
 
 }
