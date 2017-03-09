@@ -18,6 +18,10 @@ class FB extends FA{
 	}
 }
 
+class FD{
+	
+}
+
 public class FinalKeyword {
 	public static void main(String[] args) {
 		FA a = new FB();
