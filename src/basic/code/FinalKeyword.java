@@ -12,11 +12,11 @@ class FA{
  * final keyword to prevent inheritance. 
  */
 
-class FB extends FA{
+/*class FB extends FA{
 	void myShow(){
-		System.out.println("This is inheritant class");
+		System.out.println("This is inheritance class");
 	}
-}
+}*/
 
 class FD{
 	
@@ -24,8 +24,7 @@ class FD{
 
 public class FinalKeyword {
 	public static void main(String[] args) {
-		FA a = new FB();
-		a.myShow();
+		
 	}
 }
 
